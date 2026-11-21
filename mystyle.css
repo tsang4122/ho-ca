@@ -1,0 +1,188 @@
+
+body {
+    margin: 0;
+    background-color: #e0f7fa;
+    font-family: Arial, sans-serif;
+}
+
+h2 {
+    text-align: center;
+    color: #075985;
+}
+
+#content {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    margin-top: 30px;
+    overflow: hidden;
+    border: 3px double blue;
+    background: linear-gradient(to bottom, #00b4db, #005b96);
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+#shark {
+    position: absolute;
+    width: 150px;
+    left: 100px;
+    top: 250px;
+    animation-name: Shark;
+    animation-duration: 12s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes Shark {
+    0% {
+        left: 100px;
+        top: 250px;
+        transform: scaleX(1);
+    }
+
+    20% {
+        left: 300px;
+        top: 250px;
+    }
+
+    40% {
+        left: 500px;
+        top: 200px;
+    }
+
+    50% {
+        left: 600px;
+        top: 50px;
+        transform: scaleX(1);
+    }
+
+    51% {
+        left: 600px;
+        top: 50px;
+        transform: scaleX(-1);
+    }
+
+    60% {
+        left: 500px;
+        top: 100px;
+    }
+
+    80% {
+        left: 300px;
+        top: 200px;
+    }
+
+    100% {
+        left: 100px;
+        top: 250px;
+        transform: scaleX(-1);
+    }
+}
+
+#turtle {
+    position: absolute;
+    width: 100px;
+    left: 700px;
+    top: 300px;
+    animation: Turtle 25s linear infinite;
+}
+
+@keyframes Turtle {
+    0% {
+        left: 700px;
+        top: 300px;
+        transform: scaleX(1);
+    }
+
+    49% {
+        left: 100%;
+        top: 250px;
+        transform: scaleX(1);
+    }
+
+    50% {
+        left: 100%;
+        top: 250px;
+        transform: scaleX(-1);
+    }
+
+    100% {
+        left: -120px;
+        top: 300px;
+        transform: scaleX(-1);
+    }
+}
+
+#diver1 {
+    position: absolute;
+    width: 110px;
+    left: 150px;
+    top: 100px;
+    animation: Diver 6s ease-in-out infinite;
+}
+
+@keyframes Diver {
+    0% {
+        top: 100px;
+    }
+
+    50% {
+        top: 250px;
+    }
+
+    100% {
+        top: 100px;
+    }
+}
+
+#diver2 {
+    position: absolute;
+    width: 110px;
+    left: 450px;
+    top: 200px;
+    animation: Diver 8s ease-in-out infinite;
+}
+
+#school {
+    position: absolute;
+    width: 170px;
+    top: 50px;
+    animation: School 15s linear infinite alternate;
+}
+
+@keyframes School {
+    0% {
+        left: 0;
+    }
+
+    100% {
+        left: 80%;
+    }
+}
+
+#bubbles {
+    position: absolute;
+    width: 100px;
+    left: 75%;
+    bottom: -100px;
+    animation: Bubbles 7s linear infinite;
+}
+
+@keyframes Bubbles {
+    0% {
+        bottom: -100px;
+        opacity: 0;
+    }
+
+    20% {
+        opacity: 1;
+    }
+
+    100% {
+        bottom: 100%;
+        opacity: 0;
+    }
+}
