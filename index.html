@@ -1,9 +1,11 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hồ cá</title>
+
     <style>
         body {
             margin: 0;
@@ -59,6 +61,27 @@
             }
         }
 
+        @keyframes dan_ca {
+            0% {
+                transform: translateX(0px);
+            }
+            100% {
+                transform: translateX(-300px);
+            }
+        }
+
+        @keyframes botnoi {
+            0% {
+                transform: translateY(0px);
+            }
+            50% {
+                transform: translateY(35px);
+            }
+            100% {
+                transform: translateY(0px);
+            }
+        }
+
         #ca {
             position: absolute;
             width: 120px;
@@ -83,18 +106,35 @@
             right: 50px;
             width: 150px;
             opacity: 0.8;
+            animation: dan_ca 10s infinite alternate;
+        }
+
+        #bot {
+            position: absolute;
+            width: 120px;
+            top: 20px;
+            left: 35%;
+            animation: botnoi 7s infinite ease-in-out;
         }
     </style>
 </head>
+
 <body>
 
     <h2>Nguyễn Nguyễn Thành Sang - 52.01.104.088</h2>
 
     <div id="hoca">
+
         <img id="danca" src="goldFishSchool.png" alt="Đàn cá">
+
         <img id="ca" src="shark.png" alt="Cá mập">
+
         <img id="tholan" src="diver1.png" alt="Thợ lặn">
+
         <img id="rua" src="turtle.png" alt="Rùa">
+
+        <img id="bot" src="faintSchool.png" alt="Bọt khí">
+
     </div>
 
 </body>
