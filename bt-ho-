@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hồ cá</title>
+    <style>
+        body {
+            margin: 0;
+            background-color: #e0f7fa;
+        }
+
+        #hoca {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            height: 400px;
+            border: 2px double blue;
+            background: linear-gradient(to bottom, #00b4db, #0083b0);
+            overflow: hidden;
+        }
+
+        @keyframes caboi {
+            0% {
+                transform: translate(0px, 200px) rotate(0deg);
+            }
+            25% {
+                transform: translate(400px, 100px) rotate(-20deg);
+            }
+            48% {
+                transform: translate(800px, 200px) rotate(0deg);
+            }
+            52% {
+                transform: translate(800px, 200px) rotate(-10deg) scaleX(-1);
+            }
+            75% {
+                transform: translate(400px, 150px) rotate(10deg) scaleX(-1);
+            }
+            100% {
+                transform: translate(0px, 200px) rotate(0deg);
+            }
+        }
+
+        @keyframes tholanboi {
+            0% {
+                transform: translate(-150px, 50px);
+            }
+            100% {
+                transform: translate(1200px, 50px);
+            }
+        }
+
+        @keyframes ruaboi {
+            0% {
+                transform: translate(1000px, 250px) scaleX(-1);
+            }
+            100% {
+                transform: translate(-200px, 230px) scaleX(-1);
+            }
+        }
+
+        #ca {
+            position: absolute;
+            width: 120px;
+            animation: caboi 20s infinite linear;
+        }
+
+        #tholan {
+            position: absolute;
+            width: 100px;
+            animation: tholanboi 15s infinite linear;
+        }
+
+        #rua {
+            position: absolute;
+            width: 90px;
+            animation: ruaboi 25s infinite linear;
+        }
+
+        #danca {
+            position: absolute;
+            top: 40px;
+            right: 50px;
+            width: 150px;
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Nguyễn Nguyễn Thành Sang - 52.01.104.088</h2>
+
+    <div id="hoca">
+        <img id="danca" src="goldFishSchool.png" alt="Đàn cá">
+        <img id="ca" src="shark.png" alt="Cá mập">
+        <img id="tholan" src="diver1.png" alt="Thợ lặn">
+        <img id="rua" src="turtle.png" alt="Rùa">
+    </div>
+
+</body>
+</html>
